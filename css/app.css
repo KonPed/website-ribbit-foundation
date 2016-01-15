@@ -21,6 +21,10 @@ h1 {
   text-shadow: 3px 1px 5px rgba(17, 29, 62, 0.75);
 }
 
+.rnd {
+  border-radius: 8px;
+}
+
 /* Navigation */
 
 .top-bar {
@@ -29,6 +33,7 @@ h1 {
   background-color: rgba(17, 29, 62, 0.93);
   position: fixed;
   top: 0;
+  z-index: 9999;
 }
 
 .top-bar p {
@@ -77,6 +82,76 @@ h1 {
   height: 550px;
   background: url("../img/device-hero.png") no-repeat;
   background-size: contain;
+}
+
+/* Feature Content */
+
+.ft {
+  margin-bottom: 72px;
+}
+
+.ft-icon {
+  /*background-color: rgb(17, 29, 62);*/
+  background: -moz-linear-gradient(left,  rgba(17,29,62,1) 5%, rgba(53,71,101,1) 100%);
+  background: -webkit-linear-gradient(left,  rgba(17,29,62,1) 5%,rgba(53,71,101,1) 100%);
+  background: linear-gradient(to right,  rgba(17,29,62,1) 5%,rgba(53,71,101,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#111d3e', endColorstr='#354765',GradientType=1 );
+
+  width: 90%;
+  height: 190px;
+  position: relative;
+}
+
+.ft-icon::before {
+  content: "";
+  width: 180px;
+  height: 180px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  border-radius: 50%;
+  background-color: #3e6989;
+  box-shadow: 0px 0px 10px 4px #cadeff inset;
+}
+
+.ft-icon::after {
+  content: "";
+  width: 156px;
+  height: 100px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  background-image: url("../img/feature-icons.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.camera::after {
+  background-position: 0px 0px;
+}
+
+.friends::after {
+  background-position: 0px -100px;
+}
+
+.cloud::after {
+  background-position: 0px -200px;
+}
+
+.ft-text {
+  padding-top: 20px;
+}
+
+.ft-text p {
+  width: 94%;
+  text-align: justify;
+  line-height: 1.8;
 }
 
 /* Buttons */
