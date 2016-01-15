@@ -1,0 +1,129 @@
+/* Global Styles */
+
+h1,
+h2,
+h3 {
+  font-weight: 500;
+  line-height: 1;
+}
+
+h2,
+h3 {
+  color: #5f5d60;
+  font-size: 1.25em;
+}
+
+h1 {
+  font-size: 4.5em;
+  font-weight: 200;
+  margin-bottom: 30px;
+  color: #cadeff;
+  text-shadow: 3px 1px 5px rgba(17, 29, 62, 0.75);
+}
+
+/* Navigation */
+
+.top-bar {
+  width: 100%;
+  height: auto;
+  background-color: rgba(17, 29, 62, 0.93);
+  position: fixed;
+  top: 0;
+}
+
+.top-bar p {
+  color: #3e6989;
+  margin-top: 18px;
+  font-weight: bold;
+}
+
+.main-logo {
+  width: 150px;
+  height: 50px;
+  background-image: url("../img/main-logo.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center left;
+  text-indent: 100%;
+  overflow: hidden;
+  margin-top: 2px;;
+}
+
+/* Headline */
+
+.headline {
+  padding: 100px 0 60px;
+  margin: 75px 0 75px;
+  background: url("../img/main-bg.png") no-repeat, -moz-linear-gradient(bottom,  rgba(17,29,62,1) 10%, rgba(53,71,101,1) 100%, rgba(53,71,101,1) 100%);
+  background: url("../img/main-bg.png") no-repeat, -webkit-linear-gradient(bottom,  rgba(17,29,62,1) 10%,rgba(53,71,101,1) 100%,rgba(53,71,101,1) 100%);
+  background: url("../img/main-bg.png") no-repeat, linear-gradient(to top,  rgba(17,29,62,1) 10%,rgba(53,71,101,1) 100%,rgba(53,71,101,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#111d3e', endColorstr='#354765',GradientType=0 );
+  background-position: 200% top;
+}
+
+.lead {
+  margin-bottom: 70px;
+  color: #cadeff;
+}
+
+.lead:nth-of-type(2) {
+  font-size: initial;
+  margin-bottom: 20px;
+}
+
+.device {
+  float: right;
+  width: 100%;
+  height: 550px;
+  background: url("../img/device-hero.png") no-repeat;
+  background-size: contain;
+}
+
+/* Buttons */
+
+.btn-dl {
+  color: inherit;
+  border: 2px solid;
+  margin-right: 10px;
+  padding: 12px 22px;
+  background-color: transparent;
+}
+
+.btn-dl:hover {
+  color: rgb(17, 29, 62);
+  background-color: #cadeff;
+}
+
+/* Media Queries */
+
+@media only screen and (max-width: 767px) {
+  .top-bar {
+    min-height: 60px;
+  }
+
+  .main-logo {
+    width: 80px;
+    height: 35px;
+  }
+
+  .top-bar p {
+    margin: 13px 0 0;
+    font-size: 0.8em;
+  }
+
+  .headline {
+    margin: 60px 0 32px;
+    text-align: center;
+    padding: 50px 0 15px;
+    background-position: 10% top;
+  }
+
+  h1 {
+    font-size: 2.25em;
+  }
+
+  .headline .lead {
+    font-size: 1em;
+    margin-bottom: 40px;
+  }
+}
