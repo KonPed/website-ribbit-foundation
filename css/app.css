@@ -77,8 +77,8 @@ h1 {
 }
 
 .device {
-  float: right;
-  width: 100%;
+ float: right;
+  width: 84%;
   height: 550px;
   background: url("../img/device-hero.png") no-repeat;
   background-size: contain;
@@ -88,6 +88,10 @@ h1 {
 
 .ft {
   margin-bottom: 72px;
+}
+
+div.ft:nth-of-type(5) {
+  margin-bottom: 130px;
 }
 
 .ft-icon {
@@ -154,22 +158,78 @@ h1 {
   line-height: 1.8;
 }
 
+/* Form Panel */
+
+.panel {
+  margin-bottom: 100px;
+}
+
+.callout {
+  padding: 2em 2.5em;
+  background-image: url("../img/form-panel-bg.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top;
+}
+
+form {
+  position: relative;
+}
+
+input.phone-txt {
+  display: inline-block;
+  width: 75%;
+  padding: 22px 12px;
+  background-color: #dcdfe1;
+  border: 1px solid #d5d5d5;
+}
+
+.btn-submit {
+  position: absolute;
+  border: none;
+  top: 45px;
+  right: 99px;
+}
+
 /* Buttons */
 
-.btn-dl {
+.btn-dl,
+.btn-submit {
   color: inherit;
-  border: 2px solid;
   margin-right: 10px;
-  padding: 12px 22px;
   background-color: transparent;
 }
 
-.btn-dl:hover {
+.btn-dl {
+  border: 2px solid;
+}
+
+.btn-dl:hover,
+.btn-submit:hover {
   color: rgb(17, 29, 62);
   background-color: #cadeff;
 }
 
+.btn-dl:focus,
+.btn-submit:focus {
+  background-color: transparent;
+}
+
 /* Media Queries */
+
+@media only screen and (max-width: 1025px) {
+  .btn-submit {
+    right: 69px;
+  }
+
+  form {
+    display: inline-block;
+  }
+
+  h1 {
+    font-size: 3.5em;
+  }
+}
 
 @media only screen and (max-width: 767px) {
   .top-bar {
@@ -201,4 +261,43 @@ h1 {
     font-size: 1em;
     margin-bottom: 40px;
   }
+
+
+
+  .btn-submit {
+    position: static;
+    display: inline-block;
+    width: 30%;
+    border: 2px solid;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .ft-icon {
+    max-width: 350px;
+    margin: 0 auto 30px;
+  }
+
+  .inform {
+    text-align: center;
+  }
+
+  .ft-text,
+  .ft-text p {
+    text-align: center;
+    line-height: 1.6;
+  }
+}
+
+/* Icons */
+
+[class*="fi-"]::before {
+  font-size: 1.5em;
+  margin-right: 10px;
+  line-height: 1.1;
+  vertical-align: sub;
+}
+
+.btn-submit i::before {
+  margin-right: 0;
 }
