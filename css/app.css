@@ -21,6 +21,10 @@ h1 {
   text-shadow: 3px 1px 5px rgba(17, 29, 62, 0.75);
 }
 
+hr {
+  margin-bottom: 60px;
+}
+
 .rnd {
   border-radius: 8px;
 }
@@ -150,6 +154,7 @@ div.ft:nth-of-type(5) {
 
 .ft-text {
   padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .ft-text p {
@@ -161,7 +166,7 @@ div.ft:nth-of-type(5) {
 /* Form Panel */
 
 .panel {
-  margin-bottom: 100px;
+  margin-bottom: 60px;
 }
 
 .callout {
@@ -189,6 +194,27 @@ input.phone-txt {
   border: none;
   top: 45px;
   right: 99px;
+}
+
+/* Treehouse Content */
+
+.th-logo {
+  width: 160px;
+  margin: -10px 0 6px;
+}
+
+.ben-img {
+  width: 140px;
+  border-radius: 50%;
+  margin-top: -25px;
+}
+
+.teacher-desc {
+  margin-top: 25px;
+}
+
+.teacher {
+  display: block;
 }
 
 /* Buttons */
@@ -228,6 +254,36 @@ input.phone-txt {
 
   h1 {
     font-size: 3.5em;
+  }
+
+  .th-content {
+    text-align: center;
+  }
+
+  .trigger {
+    width: 60%;
+    float: right;
+  }
+
+  .access {
+    margin-top: 15px;
+  }
+
+  .th-logo {
+    margin: 50px auto 5px;
+  }
+
+  .th-copy {
+    width: 60%;
+    margin: 0 auto 30px;
+  }
+
+  .ben-img {
+    margin: 0;
+  }
+
+  .teacher-desc {
+    text-align: left;
   }
 }
 
@@ -286,6 +342,17 @@ input.phone-txt {
   .ft-text p {
     text-align: center;
     line-height: 1.6;
+  }
+
+  .trigger {
+    float: none;
+    width: 55%;
+    margin: 0 auto 20px;
+  }
+
+  .button.large,
+  .btn-dl {
+    font-size: 0.8em;
   }
 }
 
