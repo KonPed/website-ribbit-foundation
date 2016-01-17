@@ -198,6 +198,10 @@ input.phone-txt {
 
 /* Treehouse Content */
 
+.th-content {
+  margin-bottom: 100px;
+}
+
 .th-logo {
   width: 160px;
   margin: -10px 0 6px;

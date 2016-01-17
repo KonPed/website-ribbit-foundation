@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Ribbit | Website</title>
   <link rel="stylesheet" type="text/css" href="css/foundation.min.css">
   <link rel="stylesheet" type="text/css" href="fonts/foundation-icons.css">
@@ -102,7 +102,7 @@
       <div class="row">
         <div class="columns large-6 medium-6">
           <div class="trigger">
-            <img class="rnd" src="img/thumb_ribbit.jpg">
+            <a class="thumbnail" data-toggle="videoModal"><img class="rnd" src="img/thumb_ribbit.jpg" alt="thumb"></a>
           </div>
         </div>
         <div class="columns large-6 medium-6">
@@ -134,7 +134,17 @@
   <!-- End Treehouse Content -->
 
   <!-- Video Modal -->
-
+  <div id="videoModal" class="reveal" data-reveal data-reset-on-close="true">
+    <h2 class="videoModalTitle">Video</h2>
+    <div class="flex-video widescreen">
+      <iframe src="https://www.youtube.com/embed/Wnr8LRO7CiA" width="100%" height="300" frameborder="0" allowfullscreen></iframe>
+    </div>
+    <a class="close-button" data-close>&times;</a>
+  </div>
   <!-- End Video Modal -->
+
+  <script src="js/vendor/jquery.min.js"></script>
+  <script src="js/foundation.min.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>
